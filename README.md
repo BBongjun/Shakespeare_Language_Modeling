@@ -29,26 +29,50 @@ python main.py
 
 ## The average loss values for training and validation
 - RNN
-![RNN_avg_loss_plot]()
+![RNN_avg_loss_plot](plot/rnn_loss_plot_layers_2.png)
 
 - LSTM
-![LSTM_avg_loss_plot]() 
+![LSTM_avg_loss_plot](https://github.com/BBongjun/Shakespeare_Language_Modeling/blob/main/plot/lstm_loss_plot_layers_2.png) 
 
 - RNN vs LSTM 
-![RNN_vs_LSTM]()
+![RNN_vs_LSTM](plot/model_comparison_plot_layers_2.png)
 
-####
 - RNN val loss > LSTM val loss
 - RNN보다 LSTM이 더 자연스러운 텍스트를 생성할 것으로 기대됨.
 
-## Text Generation Performance
-- RNN과 LSTM의 텍스트 생성 능력 확인
-    1. Tuning a temperature(T) in Softmax function
-    2. RNN vs LSTM performance
+## Text Generation Performance in different temperature
+- Temperature에 따른 RNN과 LSTM의 텍스트 생성 능력 확인
+- Seed characters example
+    - 'QUEEN: So, lets end this'
+    - 'Lord: Kill him!'
+    - 'Citizen: I have a bad news.'
+    - 'Princess: I love you'
+    - 'All: Wow'
 
-
-### 1. Tuning a temperature(T) in Softmax function
+#### Seed characters : "QUEEN: So, lets end this
 #### RNN text generation
+- **Temperature : 0.1**
+```
+
+```
+- **Temperature : 0.5**
+```
+
+```
+- **Temperature : 1.5**
+```
+
+```
+#### LSTM text generation
+- **Temperature : 0.1**
+```
+
+```
+- **Temperature : 0.5**
+```
+
+```
+- **Temperature : 1.5**
 ```
 
 ```
