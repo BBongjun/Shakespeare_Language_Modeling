@@ -51,8 +51,8 @@ python main.py
     - 'All: Wow'
 
 ## (Example) Seed characters : "QUEEN: So, lets end this
-### Temperature : 0.1
-**RNN text generation**
+### <Temperature : 0.1>
+**RNN text**
 ```
 QUEEN: So, lets end this
 , to all our harts.
@@ -68,7 +68,7 @@ Therein behold the same to see him buried.
 God grant tha
 
 ```
-**LSTM text generation**
+**LSTM text**
 ```
 QUEEN: So, lets end this
  business.
@@ -92,8 +92,8 @@ And, by my troth, you have cause. You'll sup with me?
 VOL
 ```
 
-### Temperature : 0.5
-**RNN text generation**
+### <Temperature : 0.5>
+**RNN text**
 ```
 QUEEN: So, lets end this
 , to all our cares fears; which will in the people!
@@ -116,7 +116,7 @@ God grant that some, less
 ```
 - 다소 단편적인 느낌. 대화 사이의 연결이 명확하지 않음.
 
-**LSTM text generation**
+**LSTM text**
 ```
 QUEEN: So, lets end this
  king,
@@ -138,8 +138,8 @@ QUEEN MARGARET:
 Why, so I
 ```
 - RNN이 생성한 텍스트에 비해, 인물 간의 대화가 자연스러워보임
-### Temperature : 1.5
-**RNN text generation**
+### <Temperature : 1.5>
+**RNN text**
 ```
 QUEEN: So, lets end this
  unheart courts all things should wnow he been a rod to her friends; nay, let them follow: but sturn!
@@ -153,7 +153,7 @@ TYRREL:
 Awisin, my Lord of Derby women:
 But you, my noble accep
 ```
-**LSTM text generation**
+**LSTM text**
 ```
 Seed: QUEEN: So, lets end this
  hour at Baynard's Castle.
