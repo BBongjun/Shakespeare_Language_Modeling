@@ -14,12 +14,13 @@ Text generation model(CharRNN, CharLSTM)
 - embedding dim : 128
 - RNN, LSTM num_layers : 2
 - hidden_size : 512
+- Use a *SubsetRandomSampler* to construct a validation dataset
 
 ## File description
-- main.py : for train(+ option: text generation)
-- generate.py : for text generation
-- model.py : model definition
-- dataset.py : Shakespeare dataset & dataloader
+- **main.py** : for train(+ option: text generation)
+- **generate.py** : for text generation
+- **model.py** : model definition
+- **dataset.py** : Shakespeare dataset & dataloader
 
 ## Run
 
@@ -34,7 +35,7 @@ python main.py
 ### [LSTM]
 ![LSTM_avg_loss_plot](https://github.com/BBongjun/Shakespeare_Language_Modeling/blob/main/plot/lstm_loss_plot_layers_2.png) 
 
-### [RNN vs LSTM] 
+### [RNN vs LSTM validation loss] 
 ![RNN_vs_LSTM](plot/model_comparison_plot_layers_2.png)
 
 - RNN val loss > **LSTM val loss**
@@ -43,7 +44,7 @@ python main.py
 ## Text Generation Performance in different temperature
 - Temperature에 따른 RNN과 LSTM의 텍스트 생성 능력 확인
 - RNN, LSTM best validation performance를 보인 모델을 사용
-- Seed characters example
+- **Seed characters example**
     - 'QUEEN: So, lets end this'
     - 'Lord: Kill him!'
     - 'Citizen: I have a bad news.'
