@@ -28,16 +28,16 @@ python main.py
 ```
 
 ## The average loss values for training and validation
-- RNN
+### [RNN]
 ![RNN_avg_loss_plot](plot/rnn_loss_plot_layers_2.png)
 
-- LSTM
+### [LSTM]
 ![LSTM_avg_loss_plot](https://github.com/BBongjun/Shakespeare_Language_Modeling/blob/main/plot/lstm_loss_plot_layers_2.png) 
 
-- RNN vs LSTM 
+### [RNN vs LSTM] 
 ![RNN_vs_LSTM](plot/model_comparison_plot_layers_2.png)
 
-- RNN val loss > LSTM val loss
+- RNN val loss > **LSTM val loss**
 - RNN보다 LSTM이 더 자연스러운 텍스트를 생성할 것으로 기대됨.
 
 ## Text Generation Performance in different temperature
@@ -50,7 +50,7 @@ python main.py
     - 'Princess: I love you'
     - 'All: Wow'
 
-## (Example) Seed characters : "QUEEN: So, lets end this
+## (Example) Seed characters : "QUEEN: So, lets end this"
 ### <Temperature : 0.1>
 **RNN text**
 ```
