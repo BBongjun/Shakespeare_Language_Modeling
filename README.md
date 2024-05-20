@@ -50,8 +50,8 @@ python main.py
     - 'Princess: I love you'
     - 'All: Wow'
 
-#### Seed characters : "QUEEN: So, lets end this
-#### Temperature : 0.1
+## (Example) Seed characters : "QUEEN: So, lets end this
+### Temperature : 0.1
 **RNN text generation**
 ```
 QUEEN: So, lets end this
@@ -92,7 +92,7 @@ And, by my troth, you have cause. You'll sup with me?
 VOL
 ```
 
-#### Temperature : 0.5
+### Temperature : 0.5
 **RNN text generation**
 ```
 QUEEN: So, lets end this
@@ -138,7 +138,7 @@ QUEEN MARGARET:
 Why, so I
 ```
 - RNN이 생성한 텍스트에 비해, 인물 간의 대화가 자연스러워보임
-#### Temperature : 1.5
+### Temperature : 1.5
 **RNN text generation**
 ```
 QUEEN: So, lets end this
@@ -172,13 +172,13 @@ As if I had
 ```
 - RNN, LSTM 모두 텍스트 생성이 불안정해짐. 다양한 텍스트를 생성하면서, 오히려 문맥과 상관없는 텍스트를 생성하는 경향을 보임
 
-#### 생성된 결과에 대한 분석
+## 생성된 결과에 대한 분석
 - RNN보다 LSTM이 생성한 text가 문법적으로 정확하고 정돈된 문장 구조를 보임
 - 또한, LSTM이 인물 간의 대화가 더 자연스럽게 이루어짐
 - Temperature가 높을수록 텍스트의 다양성이 증가함을 확인 가능
 - 하지만, 다양성이 증가함에 따라, 두 모델 모두 대화가 부자연스러워지는 경향이 있음
 
-#### Temperature가 높을수록 다양성과 창의성이 증가하는 이유
+## Temperature가 높을수록 다양성과 창의성이 증가하는 이유
 - **Temperature가 높아질수록**, Softmax의 출력이 더 완만해져 덜 선택될 수 있던 character를 선택될 확률이 높아짐.
 - 따라서, 높을수록 다양하고 예측하기 어려운 텍스트를 생성함.
 - 반대로, **Temperature가 낮을수록**, Softmax의 출력에서 높은 출력을 보이는 logit값이 더 강조되는, 분포가 뾰족해지는 특징이 있음.
