@@ -15,6 +15,12 @@ Text generation model(CharRNN, CharLSTM)
 - RNN, LSTM num_layers : 2
 - hidden_size : 512
 
+## File description
+- main.py : for train(+ option: text generation)
+- generate.py : for text generation
+- model.py : model definition
+- dataset.py : Shakespeare dataset & dataloader
+
 ## Run
 
 ```
